@@ -1,0 +1,79 @@
+.dd-latest-tweet {
+  @apply pl-0 pt-12 w-full;
+
+  @screen md {
+    @apply pl-5 w-1/2;
+  }
+}
+
+.dd-latest-post {
+  @apply w-full;
+
+  height: 240px;
+
+  &:nth-of-type(1) {
+    @apply pr-0;
+
+    @screen md {
+      @apply pr-5;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @apply self-end pl-0 mt-0;
+
+    @screen md {
+      @apply pl-5;
+
+      margin-top: 174px;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @apply pr-0 mt-0;
+
+    @screen md {
+      @apply pr-5;
+
+      margin-top: -87px;
+    }
+  }
+
+  @screen md {
+    @apply w-1/2;
+  }
+}
+
+.dd-latest-post__inner {
+  @apply flex flex-col justify-center items-center h-full bg-cover relative z-20;
+
+  &::after {
+    @apply w-full h-full z-negative absolute bg-black opacity-75;
+
+    content: "";
+    top: 0;
+    left: 0;
+  }
+
+  @screen lg {
+    &::after {
+      @apply opacity-0;
+    }
+
+    > * {
+      @apply opacity-0;
+
+      transition: $transition;
+    }
+
+    &:hover {
+      > * {
+        @apply opacity-100;
+      }
+
+      &::after {
+        @apply opacity-75;
+      }
+    }
+  }
+}

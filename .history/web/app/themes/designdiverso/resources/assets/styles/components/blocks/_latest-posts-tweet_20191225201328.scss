@@ -1,0 +1,45 @@
+.dd-latest-tweet {
+  @apply pl-5 pt-12;
+}
+
+.dd-latest-post {
+  height: 240px;
+
+  &:nth-of-type(1) {
+    @apply pr-5;
+  }
+
+  &:nth-of-type(2) {
+    @apply self-end pl-5;
+
+    margin-top: 174px;
+  }
+
+  &:nth-of-type(3) {
+    @apply pr-5;
+
+    margin-top: -87px;
+  }
+}
+
+.dd-latest-post__inner {
+  @apply flex flex-col justify-center items-center h-full bg-cover relative z-20;
+
+  > * {
+    @apply opacity-0;
+
+    transition: $transition;
+  }
+
+  &:hover > * {
+    @apply opacity-100;
+  }
+
+  &::after {
+    @apply w-full h-full z-negative absolute bg-black opacity-50;
+
+    content: "";
+    top: 0;
+    left: 0;
+  }
+}

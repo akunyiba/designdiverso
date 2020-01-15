@@ -1,0 +1,36 @@
+.dd-case-studies__filter__link {
+  @apply text-black font-proxima font-semibold text-lg;
+
+  &--separator {
+    @apply relative ml-4;
+
+    &::before {
+      @apply absolute;
+
+      content: "// ";
+      left: -1rem;
+    }
+  }
+}
+
+.dd-case-studies__items__item {
+  @screen md {
+    @apply w-1/2 px-8;
+  }
+}
+
+.dd-case-studies__items__item--visible {
+  & + & {
+    @apply mt-20;
+
+    @screen md {
+      @apply mt-0;
+    }
+  }
+}
+
+.dd-case-studies__items__item--margin {
+  @screen md {
+    @apply mt-20;
+  }
+}

@@ -1,0 +1,31 @@
+.dd-hero {
+  height: calc(100vh - 78px);
+
+  &__inner {
+    height: calc(100% - 68px);
+    min-height: 460px;
+    overflow: scroll;
+  }
+
+  &__content {
+    max-width: 530px;
+  }
+}
+
+.admin-bar {
+  .dd-hero {
+    height: calc(100vh - 110px);
+
+    &__inner {
+      height: calc(100% - 68px);
+    }
+  }
+}
+
+@screen md {
+  .dd-hero {
+    h1 {
+      line-height: 113px;
+    }
+  }
+}

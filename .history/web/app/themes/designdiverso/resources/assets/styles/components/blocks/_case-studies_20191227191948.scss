@@ -1,0 +1,14 @@
+.dd-case-studies-filter__link {
+  @apply text-black font-proxima font-semibold text-lg;
+
+  &--separator {
+    @apply relative ml-4;
+
+    &::before {
+      @apply absolute;
+
+      content: "// ";
+      left: -1rem;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.dd-mautic-newsletter-form {
+  max-width: 300px;
+
+  .mauticform-innerform .mauticform-page-wrapper {
+    display: flex !important;
+
+    .mauticform-email {
+      @apply flex-grow;
+    }
+  }
+
+  .mauticform-row {
+    @apply mb-0;
+  }
+
+  .mauticform_wrapper {
+    @apply m-0;
+  }
+
+  .mauticform-error,
+  .mauticform-message {
+    @apply mb-0;
+  }
+
+  .mauticform-input {
+    @apply outline-none rounded-none border-t-0 border-r-0 border-l-0 border-black px-0 pt-0 pb-2;
+
+    border-bottom-width: 2px;
+
+    &::placeholder {
+      @apply font-proxima text-placeholder;
+    }
+  }
+
+  .mauticform-button-wrapper .mauticform-button {
+    @apply rounded-none border-t-0 border-r-0 border-l-0 border-black px-0 pt-0 pb-2;
+
+    border-bottom-width: 2px;
+    margin-left: -1px;
+    text-indent: -9999px;
+    width: 30px;
+    background-image: url(../images/icons/arrow-right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
+
+  .mauticform-errormsg {
+    @apply absolute font-proxima pt-2;
+  }
+}
+
+.dd-mautic-book-a-call-form {
+  .mauticform-label {
+    @apply font-proxima font-bold text-lg;
+  }
+
+  .mauticform-row.mauticform-required {
+    .mauticform-label {
+      &::after {
+        @apply text-white;
+      }
+    }
+  }
+
+  .mauticform-input,
+  .mauticform-textarea {
+    @apply bg-transparent outline-none rounded-none text-white border-t-0 border-r-0 border-l-0 border-white px-0 pt-0 pb-2;
+
+    border-bottom-width: 2px;
+
+    &::placeholder {
+      @apply font-proxima text-placeholder;
+    }
+  }
+
+  .mauticform-button-wrapper .mauticform-button {
+    @apply text-white font-grotesk font-normal rounded-none border-placeholder text-sm mt-6 px-20 py-3;
+
+    @screen md {
+      @apply text-lg;
+    }
+  }
+
+  .mauticform-errormsg {
+    @apply absolute font-proxima pt-2;
+  }
+}

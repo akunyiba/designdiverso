@@ -1,0 +1,26 @@
+
+.wp-block-button {
+  &:not(.is-style-*) {
+    .wp-block-button__link {
+      @apply btn;
+    }
+  }
+
+  &.is-style-outline {
+    .wp-block-button__link {
+      @apply btn btn--outline;
+    }
+  }
+
+  &__link.has-primary-color {
+    @apply text-primary;
+  }
+
+  &__link.has-black-color {
+    @apply text-black;
+  }
+
+  &__link.has-white-color {
+    @apply text-white;
+  }
+}

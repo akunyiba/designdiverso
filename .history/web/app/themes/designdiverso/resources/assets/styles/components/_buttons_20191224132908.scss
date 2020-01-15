@@ -1,0 +1,29 @@
+.dd-btn {
+  @apply rounded-none my-3 leading-none px-16 py-4 text-sm mt-6 px-16 py-3;
+
+  transition: 0.2s ease;
+
+  a {
+    @apply border-none;
+  }
+
+  &--outline {
+    @apply bg-transparent border border-solid border-black;
+
+    &:hover {
+      @apply bg-black text-white;
+    }
+  }
+
+  &--primary {
+    @apply bg-primary text-white;
+
+    &:hover {
+      @apply bg-black;
+    }
+  }
+
+  @screen md {
+    @apply text-xl mt-0 py-4;
+  }
+}

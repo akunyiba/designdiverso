@@ -1,0 +1,7 @@
+.dd-hidden-md-block {
+  @apply hidden md;
+
+  @screen md {
+    @apply block;
+  }
+}

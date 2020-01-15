@@ -1,0 +1,54 @@
+.dd-posts-timeline__filter {
+  @apply text-center;
+}
+
+.dd-posts-timeline__filter__text {
+  @apply inline-block font-proxima text-lg;
+}
+
+.dd-posts-timeline__filter__select {
+  @apply font-proxima font-bold text-lg text-black bg-transparent outline-none rounded-none border-t-0 border-r-0 border-l-0 border-placeholder pl-3 pr-6 pt-0 pb-1;
+
+  border-bottom-width: 2px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDEuNDU4IiBoZWlnaHQ9IjIwMS40NTciPjxwYXRoIGQ9Ik0xOTMuMTc3IDQ2LjIzM2w4LjI4IDguMjgtMTAwLjcyMyAxMDAuNzI4TDAgNTQuNDk1bDguMjgtOC4yNzkgOTIuNDYgOTIuNDYgOTIuNDM3LTkyLjQ0M3oiIGZpbGw9IiMwMzAzMDMiLz48L3N2Zz4=");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0 top 40%, 0 0;
+  background-size: 1.125rem auto, 100%;
+
+  &::-ms-expand {
+    @apply hidden;
+  }
+
+  &:focus {
+    @apply outline-none;
+  }
+
+  // & option {
+  //   @apply font-normal;
+  // }
+}
+
+.dd-posts-timeline__items__item {
+  @screen md {
+    @apply w-1/2 px-8;
+  }
+}
+
+.dd-posts-timeline__items__item--visible {
+  & + & {
+    @apply mt-20;
+
+    @screen md {
+      @apply mt-0;
+    }
+  }
+}
+
+.dd-posts-timeline__items__item--visible.dd-posts-timeline__items__item--margin {
+  @screen md {
+    @apply mt-20;
+  }
+}

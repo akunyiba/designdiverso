@@ -1,0 +1,48 @@
+.dd-no-wrap {
+  @apply whitespace-no-wrap;
+}
+
+.dd-md-hidden {
+  @screen md {
+    @apply hidden;
+  }
+}
+
+.dd-hidden-md-block {
+  @apply hidden;
+
+  @screen md {
+    @apply block;
+  }
+}
+
+.dd-cover-contact-colorful-box {
+  @apply px-8;
+}
+
+.dd-cover-contact-colorful-box__separator-and-link {
+  @apply font-normal whitespace-no-wrap;
+}
+
+.dd-cover-contact-colorful-box__link {
+  @apply text-white;
+}
+
+// Gutenberg Bug Fixes
+// TODO: https://github.com/WordPress/gutenberg/issues/18416
+.dd-gutenberg-2-col-margin-fix {
+  .wp-block-column:nth-child(2n) {
+    @media (min-width: 600px) {
+      @apply ml-0 pl-6;
+    }
+  }
+}
+
+.dd-cols-sm-reverse {
+  @apply flex-col-reverse;
+
+  @screen sm {
+    @apply flex-row;
+  }
+}
+

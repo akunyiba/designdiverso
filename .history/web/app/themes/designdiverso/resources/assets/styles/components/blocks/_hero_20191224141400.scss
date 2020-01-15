@@ -1,0 +1,53 @@
+.dd-hero {
+  height: calc(100vh - 5rem);
+
+  &__inner {
+    @apply relative h-full flex bg-cover bg-center px-10 items-center;
+
+    &::after {
+      @apply absolute block w-full h-full bg-black opacity-50 z-0;
+
+      left: 0;
+      content: "";
+    }
+  }
+
+  &__content {
+    @apply z-10;
+
+    max-width: 530px;
+  }
+
+  @screen md {
+    min-height: 606px;
+
+    h1 {
+      line-height: 113px;
+    }
+
+    &__inner {
+      @apply px-20;
+
+      height: calc(100% - 4rem);
+      min-height: 460px;
+
+      &::after {
+        @apply hidden;
+      }
+    }
+  }
+
+  @screen lg {
+    @apply px-20;
+  }
+}
+
+.admin-bar {
+  .dd-hero {
+    height: calc(100vh - 110px);
+
+    &__inner {
+      height: calc(100% - 68px);
+    }
+  }
+}

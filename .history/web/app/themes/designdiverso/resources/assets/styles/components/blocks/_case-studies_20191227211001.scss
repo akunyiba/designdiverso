@@ -1,0 +1,22 @@
+.dd-case-studies__filter__link {
+  @apply text-black font-proxima font-semibold text-lg;
+
+  &--separator {
+    @apply relative ml-4;
+
+    &::before {
+      @apply absolute;
+
+      content: "// ";
+      left: -1rem;
+    }
+  }
+}
+
+.dd-case-studies__items__item {
+  @apply w-1/2 px-8 mb-16;
+
+  &:nth-of-type(n+1) {
+    background: #000;
+  }
+}

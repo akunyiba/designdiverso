@@ -1,0 +1,153 @@
+.nav-primary {
+  @apply bg-white absolute z-40 h-full w-full table text-center opacity-0;
+
+  top: 0;
+  left: 0;
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: scale(0);
+
+  .menu-main-menu-container {
+    @apply align-middle table-cell;
+  }
+
+  ul {
+    @apply list-reset;
+  }
+
+  li {
+    @apply opacity-0;
+
+    padding: 8px 0;
+    transition: all 400ms 510ms;
+
+    &:nth-child(odd) {
+      transform: translateX(30%);
+    }
+
+    &:nth-child(even) {
+      transform: translateX(-30%);
+    }
+
+    // &:last-child {
+    //   transform: none;
+    // }
+  }
+
+  &.act {
+    @apply opacity-100;
+
+    transform: scale(1);
+
+    ul li {
+      @apply opacity-100;
+
+      transform: translateX(0);
+    }
+  }
+
+  a {
+    @apply inline-block text-black border-none lowercase font-proxima text-2xl;
+
+    &:hover {
+      @apply text-primary;
+    }
+  }
+}
+
+.dd-hamburger {
+  @apply absolute z-50 border-none;
+
+  height: 30px;
+  width: 40px;
+  right: 2rem;
+  top: 1.75rem;
+
+  > span {
+    @apply bg-black w-full absolute;
+
+    border-radius: 2px;
+    height: 4px;
+    left: 50%;
+    top: 50%;
+    margin: -1px 0 0 -20px;
+    transition: height 100ms;
+
+    &::after,
+    &::before {
+      @apply bg-black w-full absolute;
+
+      content: "";
+      border-radius: 2px;
+      height: 4px;
+      left: 50%;
+      margin-left: -20px;
+      transition: all 200ms;
+    }
+
+    &::after {
+      top: -10px;
+    }
+
+    &::before {
+      bottom: -10px;
+    }
+  }
+
+  &.act {
+    > span {
+      @apply h-0;
+
+      &::after,
+      &::before {
+        top: 1px;
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@screen lg {
+  .dd-hamburger {
+    @apply hidden;
+  }
+
+  .nav-primary {
+    @apply flex-1 relative opacity-100;
+
+    transform: none;
+
+    .menu-main-menu-container {
+      @apply block;
+    }
+
+    ul {
+      @apply flex flex-wrap justify-end;
+
+      a {
+        @apply px-6 py-2 text-lg;
+      }
+
+      li {
+        @apply opacity-100;
+
+        &:nth-child(odd),
+        &:nth-child(even) {
+          transform: none;
+        }
+
+        &:last-of-type {
+          a {
+            @apply pr-0;
+          }
+        }
+      }
+    }
+  }
+}

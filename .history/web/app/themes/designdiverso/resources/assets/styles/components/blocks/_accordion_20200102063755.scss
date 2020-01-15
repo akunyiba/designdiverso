@@ -1,0 +1,34 @@
+.dd-accordion {
+  counter-reset: dd_accordion_items;
+}
+
+.dd-accordion__item {
+  a {
+    @apply flex-grow;
+  }
+
+  h4 {
+    &::before {
+      @apply w-6;
+
+      counter-increment: dd_accordion_items;
+      content: counter(dd_accordion_items);
+    }
+
+    &::after {
+      @apply text-white;
+
+      content: "+";
+    }
+  }
+
+  &--selected {
+    h4 {
+      &::after {
+        @apply text-white;
+
+        content: "-";
+      }
+    }
+  }
+}

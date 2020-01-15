@@ -1,0 +1,42 @@
+.dd-mautic-newsletter {
+  .mauticform-innerform .mauticform-page-wrapper {
+    @apply flex;
+
+    .mauticform-email {
+      @apply flex-grow;
+    }
+  }
+
+  .mauticform-row {
+    @apply mb-0;
+  }
+
+  .mauticform_wrapper {
+    @apply m-0;
+  }
+
+  .mauticform-error,
+  .mauticform-message {
+    @apply mb-0;
+  }
+
+  .mauticform-input {
+    @apply rounded-none border-t-0 border-r-0 border-l-0 border-black px-0 pt-0 pb-2;
+
+    border-bottom-width: 3px;
+
+    &::placeholder {
+      @apply font-proxima;
+    }
+  }
+
+  .mauticform-button-wrapper .mauticform-button {
+    @apply rounded-none border-t-0 border-r-0 border-l-0 border-black px-0 pt-0 pb-2;
+
+    border-bottom-width: 3px;
+    margin-left: -1px;
+    text-indent: -9999px;
+    width: 50px;
+    background: #eee;
+  }
+}

@@ -1,0 +1,9 @@
+.dd-case-study-filter__link {
+  @apply text-black;
+
+  &--separator {
+    &::before {
+      content: "// ";
+    }
+  }
+}

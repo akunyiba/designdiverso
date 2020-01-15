@@ -1,0 +1,59 @@
+.dd-btn {
+  @apply rounded-none my-3 leading-none px-16 py-4 text-sm mt-6 px-16 py-3;
+
+  transition: $btn-transition; //TODO: var button transition
+
+  a {
+    @apply border-none;
+  }
+
+  &--outline {
+    @apply bg-transparent border border-solid border-black;
+
+    &:hover {
+      @apply bg-black text-white;
+    }
+  }
+
+  &--primary {
+    @apply bg-primary text-white;
+
+    &:hover {
+      @apply bg-black;
+    }
+  }
+
+  @screen md {
+    @apply text-xl mt-0 py-4;
+  }
+}
+
+.wp-block-button {
+  .wp-block-button__link {
+    @apply rounded-none my-3 leading-none px-16 py-4 text-sm mt-3 px-16 py-3;
+
+    transition: 0.2s ease;
+  }
+
+  // &:not(.is-style-*) {
+  //   .wp-block-button__link {
+
+  //   }
+  // }
+
+  &.is-style-outline {
+    .wp-block-button__link {
+      @apply bg-transparent border border-solid border-black;
+
+      &:hover {
+        @apply bg-black text-white;
+      }
+    }
+  }
+
+  @screen md {
+    .wp-block-button__link {
+      @apply text-xl py-4;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.dd-columns-inner-padding {
+    .wp-block-column:first-of-type {
+      padding-right: 100px;
+    }
+
+    .wp-block-column:last-of-type {
+      padding-left: 100px;
+    }
+  }
+}

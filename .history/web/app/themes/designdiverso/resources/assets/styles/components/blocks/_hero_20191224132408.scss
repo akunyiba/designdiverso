@@ -1,0 +1,47 @@
+.dd-hero {
+  height: calc(100vh - 5rem);
+
+  &__inner {
+    @apply h-full flex bg-cover bg-center px-10 items-center;
+  }
+
+  &__content {
+    max-width: 530px;
+  }
+
+  @screen md {
+    &__inner {
+      @apply px-20;
+
+      height: calc(100% - 4rem);
+    }
+  }
+
+  @screen lg {
+    @apply px-20;
+  }
+}
+
+.admin-bar {
+  .dd-hero {
+    height: calc(100vh - 110px);
+
+    &__inner {
+      height: calc(100% - 68px);
+    }
+  }
+}
+
+@screen md {
+  .dd-hero {
+    min-height: 606px;
+
+    &__inner {
+      min-height: 460px;
+    }
+
+    h1 {
+      line-height: 113px;
+    }
+  }
+}

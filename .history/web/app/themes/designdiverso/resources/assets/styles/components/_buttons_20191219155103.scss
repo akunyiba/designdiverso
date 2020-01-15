@@ -1,0 +1,35 @@
+.btn {
+  @apply rounded-none my-3 px-16 py-4 leading-none text-xl;
+
+  transition: 0.2s ease;
+
+  a {
+    @apply border-none;
+  }
+
+  &--primary {
+    @apply bg-primary text-white;
+
+    &:hover {
+      @apply bg-black;
+    }
+  }
+
+  &--outline {
+    @apply bg-transparent border border-solid border-black;
+
+    &:hover {
+      @apply bg-black text-white;
+    }
+  }
+
+  &--p-big {
+    @apply px-20;
+  }
+}
+
+@sceen md {
+  .btn {
+    @apply px-4;
+  }
+}

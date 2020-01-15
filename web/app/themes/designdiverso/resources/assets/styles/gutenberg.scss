@@ -1,0 +1,14 @@
+@tailwind components;
+
+@import "common/variables";
+@import "common/global";
+// @import "common/fonts";
+@import "components/buttons";
+@import "layouts/header";
+@import "layouts/gutenberg-editor";
+@import "components/blocks/hero";
+@import "components/blocks/clients-carousel";
+@import "components/wp-classes";
+@import "components/gutenberg-classes";
+
+@tailwind utilities;

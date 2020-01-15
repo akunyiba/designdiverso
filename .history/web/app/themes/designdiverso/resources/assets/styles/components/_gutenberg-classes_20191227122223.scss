@@ -1,0 +1,23 @@
+.has-primary-color {
+  @apply text-primary;
+}
+
+.has-black-color {
+  @apply text-black;
+}
+
+.has-white-color {
+  @apply text-white;
+}
+
+.has-grey-light-background-color {
+  @apply bg-grey-light;
+}
+
+.has-gradient-1-background-color {
+  // &.wp-block-cover {
+  //   @apply bg-gradient-1;
+  // }
+
+  background: $gradient-1;
+}

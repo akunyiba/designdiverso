@@ -1,0 +1,17 @@
+.btn {
+  @apply rounded-none my-3 px-16 py-4 leading-none text-xl;
+
+  transition: 0.2s ease;
+
+  &--primary {
+    @apply bg-primary text-white;
+  }
+
+  &--outline {
+    @apply bg-transparent border border-solid border-black;
+  }
+
+  &--p-big {
+    @apply px-20;
+  }
+}

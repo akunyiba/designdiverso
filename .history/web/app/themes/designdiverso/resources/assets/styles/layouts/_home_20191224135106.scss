@@ -1,0 +1,43 @@
+.home {
+  &__case-study {
+    &--reverse {
+      @apply flex-col-reverse;
+    }
+
+    .wp-block-column {
+      @apply text-center;
+
+      h3 {
+        @apply mt-5;
+      }
+
+      h3 + p {
+        @apply mt-6;
+      }
+    }
+
+    .wp-block-column:first-of-type {
+      @screen xl {
+        @apply pr-24;
+      }
+    }
+
+    .wp-block-column:last-of-type {
+      @screen xl {
+        @apply pl-24;
+      }
+    }
+  }
+
+  @screen sm {
+    &__case-study {
+      &--reverse {
+        @apply flex-row;
+      }
+
+      .wp-block-column {
+        @apply text-left;
+      }
+    }
+  }
+}

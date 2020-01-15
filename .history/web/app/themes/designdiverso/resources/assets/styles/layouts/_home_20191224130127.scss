@@ -1,0 +1,16 @@
+.home {
+  &__case-study {
+    @apply dd-2-col-inner-p;
+    &--reverse {
+      @apply flex-col-reverse;
+    }
+  }
+
+  @screen sm {
+    &__case-study {
+      &--reverse {
+        @apply flex-row;
+      }
+    }
+  }
+}

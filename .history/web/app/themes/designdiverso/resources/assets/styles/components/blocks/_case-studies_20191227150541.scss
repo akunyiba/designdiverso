@@ -1,0 +1,5 @@
+.dd-case-study-filter__separator {
+  &::before {
+    content: "// ";
+  }
+}

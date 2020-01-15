@@ -1,0 +1,19 @@
+.dd-hidden-md-block {
+  @apply hidden;
+
+  @screen md {
+    @apply block;
+  }
+}
+
+.dd-cover-contact-colorful-box {
+  @apply px-8;
+}
+
+.dd-cover-contact-colorful-box__separator {
+  @apply hidden;
+
+  @screen md {
+    @apply block;
+  }
+}

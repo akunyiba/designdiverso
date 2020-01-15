@@ -1,0 +1,43 @@
+.dd-accordion {
+  counter-reset: dd_accordion_items;
+}
+
+.dd-accordion__item__text {
+  @apply pt-3;
+}
+
+.dd-accordion__item {
+  a {
+    @apply block border-solid border-b-2 border-placeholder py-3;
+  }
+
+  h3 span {
+    @apply flex-grow;
+  }
+
+  h3 {
+    @apply mb-0;
+
+    &::before {
+      @apply w-6;
+
+      counter-increment: dd_accordion_items;
+      content: counter(dd_accordion_items);
+    }
+
+    &::after {
+      @apply text-white font-normal;
+
+      content: "+";
+      transition: transform 0.4s;
+    }
+  }
+
+  &--selected {
+    h3 {
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

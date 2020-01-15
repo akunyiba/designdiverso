@@ -1,0 +1,16 @@
+.dd-hero {
+  height: calc(100vh - 78px);
+  overflow: scroll;
+
+  &__inner {
+    height: calc(100% - 68px);
+  }
+
+  &__content {
+    max-width: 530px;
+  }
+
+  h1 {
+    line-height: 113px;
+  }
+}

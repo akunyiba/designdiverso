@@ -1,0 +1,7 @@
+.dd-case-study-filter__link {
+  &--separator {
+    &::before {
+      content: "// ";
+    }
+  }
+}

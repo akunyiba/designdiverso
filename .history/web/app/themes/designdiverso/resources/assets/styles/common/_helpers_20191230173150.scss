@@ -1,0 +1,11 @@
+.dd-hidden-md-block {
+  @apply hidden;
+
+  @screen md {
+    @apply block;
+  }
+}
+
+.dd-cover-contact-colorful-box {
+  @apply px-8;
+}

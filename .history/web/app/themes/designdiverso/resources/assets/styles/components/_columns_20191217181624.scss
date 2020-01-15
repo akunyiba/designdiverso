@@ -1,0 +1,9 @@
+.dd-2-col-inner-p {
+  .wp-block-column:first-of-type {
+    padding-right: 100px;
+  }
+
+  .wp-block-column:last-of-type {
+    padding-left: 8%;
+  }
+}

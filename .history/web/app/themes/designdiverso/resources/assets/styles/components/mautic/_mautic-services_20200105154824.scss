@@ -1,0 +1,104 @@
+.dd-mautic-services-group {
+  @apply py-16 px-24;
+}
+
+.dd-mautic-services-form {
+  .mauticform-page-wrapper {
+    @apply flex flex-wrap;
+  }
+
+  .mauticform-row {
+    @apply mb-12 px-6;
+  }
+
+  .mauticform-label {
+    @apply font-proxima font-bold text-lg;
+  }
+
+  .mauticform-row.mauticform-required {
+    .mauticform-label {
+      &::after {
+        @apply text-white;
+      }
+    }
+  }
+
+  .mauticform-input,
+  .mauticform-selectbox,
+  .mauticform-textarea {
+    @apply font-proxima bg-transparent outline-none rounded-none text-white border-t-0 border-r-0 border-l-0 border-white px-0 pt-0 pb-2;
+
+    border-bottom-width: 2px;
+
+    &::placeholder {
+      @apply font-proxima text-placeholder opacity-100;
+    }
+  }
+
+  .mauticform-selectbox {
+    @apply text-placeholder;
+    // display: block;
+    // padding: 0.6em 1.4em 0.5em 0.8em;
+    // width: 100%;
+    // max-width: 100%;
+    // box-sizing: border-box;
+    // margin: 0;
+    // border: 1px solid #aaa;
+    // box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+    // border-radius: 0.5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    // background-color: #fff;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OTAgNDkwIj48cGF0aCBkPSJNMCAxNS41NDFoNDkwTDI0NC45OTEgNDc0LjQ1OSAwIDE1LjU0MXoiLz48L3N2Zz4=");
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+  }
+
+  .mauticform-selectbox::-ms-expand {
+    display: none;
+  }
+
+  .mauticform-selectbox:hover {
+    // border-color: #888;
+  }
+
+  .mauticform-selectbox:focus {
+    // border-color: #aaa;
+    // box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+    // box-shadow: 0 0 0 3px -moz-mac-focusring;
+    // color: #222;
+    outline: none !important;
+  }
+
+  .mauticform-selectbox option {
+    font-weight: normal;
+  }
+
+  .mauticform-textarea {
+    @apply font-proxima text-placeholder;
+  }
+
+  .mauticform-button-wrapper {
+    @apply m-auto;
+  }
+
+  .mauticform-button-wrapper .mauticform-button {
+    @apply text-white font-grotesk font-normal rounded-none border-placeholder text-sm mt-4 px-20 py-3;
+
+    @screen md {
+      @apply text-lg;
+    }
+
+    &:hover {
+      @apply bg-primary border-primary;
+
+      transition: $transition;
+    }
+  }
+
+  .mauticform-errormsg {
+    @apply absolute font-proxima pt-2;
+  }
+}

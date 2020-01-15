@@ -1,0 +1,19 @@
+.btn {
+  @apply bg-primary my-3 px-20 py-4 text-white leading-none text-xl;
+
+  transition: 0.2s ease;
+}
+
+.wp-block-button {
+  &:not(.is-style-*) {
+    .wp-block-button__link {
+      @apply btn rounded-none;
+    }
+  }
+
+  &.is-style-outline {
+    .wp-block-button__link {
+      @apply border border-solid border-black;
+    }
+  }
+}

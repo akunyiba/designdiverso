@@ -1,0 +1,25 @@
+.dd-mautic-newsletter {
+  .mauticform-innerform .mauticform-page-wrapper {
+    @apply flex;
+
+    .mauticform-email {
+      @apply flex-grow;
+    }
+  }
+
+  .mauticform-row {
+    @apply mb-0;
+  }
+
+  .mauticform_wrapper {
+    @apply m-0;
+  }
+
+  .mauticform-input {
+    @apply rounded-none border-t-0 border-r-0 border-l-0 border-b-2 border-black px-0;
+
+    &::placeholder {
+      @apply font-proxima;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.home__case-study {
+  &--reverse {
+    @apply flex-col-reverse;
+  }
+
+  &-spacer {
+    height: 10px !important;
+  }
+
+  .wp-block-column {
+    @apply text-center;
+
+    h3 {
+      @apply mt-3;
+    }
+
+    h3 + p {
+      @apply mt-4;
+    }
+
+    .wp-block-image {
+      @apply px-6;
+    }
+  }
+
+  .wp-block-column:first-of-type {
+    @screen xl {
+      @apply pr-24;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @screen xl {
+      @apply pl-24;
+    }
+  }
+
+  @screen sm {
+    &--reverse {
+      @apply flex-row;
+    }
+
+    &-spacer {
+      height: 100px !important;
+    }
+
+    .wp-block-column {
+      @apply text-left;
+
+      .wp-block-image {
+        @apply px-0;
+      }
+    }
+  }
+}
+
+.mauticform-button-wrapper {
+  background-color: #000;
+}

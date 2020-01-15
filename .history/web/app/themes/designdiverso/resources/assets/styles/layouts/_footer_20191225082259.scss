@@ -1,0 +1,142 @@
+.site-footer {
+  .dd-social-links {
+    a:first-of-type {
+      @apply ml-0;
+    }
+  }
+}
+
+.rolling-text-box {
+  @apply block relative align-middle mt-3;
+
+  @screen sm {
+    @apply inline-block mt-0;
+  }
+
+  div {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    top: -40px;
+    transform: rotateX(-90deg);
+    opacity: 0;
+    animation-timing-function: ease;
+
+    &:nth-child(1) {
+      animation: rollDown 10s forwards infinite;
+    }
+
+    &:nth-child(2) {
+      animation: rollDown2 10s forwards infinite;
+    }
+
+    &:nth-child(3) {
+      animation: rollDown3 10s forwards infinite;
+    }
+
+    &:nth-child(4) {
+      animation: rollDown4 10s forwards infinite;
+    }
+  }
+}
+
+@keyframes rollDown {
+  0% {
+    top: -40px;
+    transform: rotateX(-90deg);
+  }
+
+  6% {
+    top: -10px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  13% {
+    top: -10px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  25% {
+    top: 20px;
+    transform: rotateX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rollDown2 {
+  25% {
+    top: -40px;
+    transform: rotateX(-90deg);
+  }
+
+  31% {
+    top: -10px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  38% {
+    top: -10px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    top: 20px;
+    transform: rotateX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rollDown3 {
+  50% {
+    top: -40px;
+    transform: rotateX(-90deg);
+  }
+
+  56% {
+    top: -10px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  64% {
+    top: -10px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  75% {
+    top: 20px;
+    transform: rotateX(30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rollDown4 {
+  75% {
+    top: -40px;
+    transform: rotateX(-90deg);
+  }
+
+  81% {
+    top: -10px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  89% {
+    top: -10px;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    top: 20px;
+    transform: rotateX(30deg);
+    opacity: 0;
+  }
+}
+

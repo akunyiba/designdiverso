@@ -1,0 +1,25 @@
+.btn {
+  @apply rounded-none my-3 leading-none text-xl;
+
+  transition: 0.2s ease;
+
+  a {
+    @apply border-none;
+  }
+}
+
+.btn--outline {
+  @apply bg-transparent border border-solid border-black;
+
+  &:hover {
+    @apply bg-black text-white;
+  }
+}
+
+.btn--primary {
+  @apply bg-primary text-white;
+
+  &:hover {
+    @apply bg-black;
+  }
+}

@@ -1,0 +1,75 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mb-2 leading-tight;
+}
+
+p {
+  @apply mb-3 leading-normal font-grotesk font-normal;
+}
+
+a {
+  @apply text-primary no-underline border-b border-transparent;
+
+  transition: color $transition;
+
+  &:hover {
+    @apply border-primary;
+  }
+}
+
+h2 {
+  @apply font-grotesk font-extrabold text-h2;
+
+  @screen md {
+    @apply text-h2-md;
+  }
+}
+
+h3 {
+  @apply font-grotesk font-extrabold text-h3;
+}
+
+h4 {
+  @apply font-proxima font-extrabold text-h4;
+}
+
+.wrap,
+.wp-block-cover-image .wp-block-cover__inner-container,
+.wp-block-cover .wp-block-cover__inner-container {
+  width: 90vw;
+  margin: 0 auto;
+
+  @screen xl {
+    width: 60vw;
+  }
+}
+
+.alignwide {
+  @screen lg {
+    width: 90vw;
+  }
+
+  @screen xl {
+    width: 80vw;
+    margin-left: -10vw;
+  }
+}
+
+.alignfull {
+  margin-left: -5vw;
+  width: 100vw;
+
+  @screen xl {
+    margin-left: -20vw;
+  }
+}
+
+.content .main {
+  @screen md {
+    @apply pt-12;
+  }
+}

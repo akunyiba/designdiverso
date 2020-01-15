@@ -1,0 +1,33 @@
+.dd-2-col-inner-p {
+  .wp-block-column:first-of-type {
+    @screen xl {
+      @apply pr-24;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @screen xl {
+      @apply pl-24;
+    }
+  }
+}
+
+.dd-2-col-inner-p-small {
+  .wp-block-column:first-of-type {
+    @screen xl {
+      @apply pr-8;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @screen xl {
+      @apply pl-8;
+    }
+  }
+}
+
+.dd-group-inner-p {
+  @screen xl {
+    @apply pl-24;
+  }
+}

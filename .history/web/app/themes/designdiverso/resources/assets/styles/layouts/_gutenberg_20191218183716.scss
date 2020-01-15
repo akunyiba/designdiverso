@@ -1,0 +1,34 @@
+// .editor-post-title {
+//   @apply bg-primary;
+
+//   &__block &__input {
+//     @apply text-white font-proxima font-normal;
+
+//     &:focus {
+//       @apply text-white;
+//     }
+//   }
+// }
+
+.wp-block {
+  max-width: 804px + 86px;
+
+  &[data-align="wide"],
+  .alignwide {
+    max-width: 836px + 86px;
+  }
+
+  .alignfull,
+  &[data-align="full"],
+  &[data-type="acf/pinterest-cta"],
+  &[data-type="acf/destination"],
+  &[data-type="acf/hplworld-cta"] {
+    max-width: 932px + 86px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-white {
+    @apply text-white;
+  }
+}

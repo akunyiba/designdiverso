@@ -1,0 +1,14 @@
+.dd-case-study-filter__link {
+  @apply text-black font-proxima font-semibold text-lg;
+
+  &--separator {
+    @apply relative pl-2;
+
+    &::before {
+      @apply absolute;
+
+      content: "// ";
+      left: -1rem;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mb-2 leading-tight;
+}
+
+p {
+  @apply mb-3 leading-normal font-grotesk font-normal;
+}
+
+a {
+  @apply dd-transition text-primary no-underline border-b border-transparent;
+
+  &:hover {
+    @apply border-primary;
+  }
+}
+
+h2 {
+  @apply font-grotesk font-extrabold text-h2;
+
+  @screen md {
+    @apply text-h2-md;
+  }
+}
+
+h3 {
+  @apply font-grotesk font-extrabold text-h3;
+}
+
+h4 {
+  @apply font-proxima font-extrabold text-h4;
+}

@@ -1,0 +1,88 @@
+.dd-areas-of-expertise-cols {
+  counter-reset: dd_expertise_cols;
+
+  .wp-block-column {
+    @apply ml-0 cursor-pointer;
+
+    @screen sm {
+      flex-basis: 50%;
+    }
+
+    @screen lg {
+      flex-basis: 25%;
+    }
+
+    > .wp-block-cover {
+      @apply p-12;
+    }
+
+    h3 {
+      a {
+        @apply text-white;
+      }
+
+      &::before {
+        @apply block text-primary text-base;
+
+        counter-increment: dd_expertise_cols;
+        content: "#" counter(dd_expertise_cols);
+      }
+    }
+  }
+}
+
+.dd-how-we-do-it-cols {
+  @apply py-8;
+
+  .wp-block-column:first-of-type {
+    @apply px-8;
+
+    @screen lg {
+      @apply pl-0;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @apply px-8;
+
+    @screen lg {
+      @apply pr-0;
+    }
+  }
+
+  @screen md {
+    @apply py-16;
+  }
+}
+
+.dd-services-list {
+  @apply pl-0;
+
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 15px;
+
+    &::before {
+      @apply absolute bg-primary;
+
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+    }
+
+    & + li {
+      @apply mt-4;
+    }
+  }
+}
+
+.dd-separator-wide.is-style-wide {
+  border-bottom-width: 2px;
+}

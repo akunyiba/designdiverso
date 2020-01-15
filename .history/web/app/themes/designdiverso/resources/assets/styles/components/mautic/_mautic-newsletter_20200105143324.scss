@@ -1,0 +1,69 @@
+.dd-mautic-newsletter-cols {
+  .wp-block-column:first-of-type {
+    @screen sm {
+      @apply pr-6;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @screen sm {
+      @apply pl-6;
+    }
+  }
+}
+
+.dd-mautic-newsletter-form {
+  max-width: 350px;
+
+  @screen md {
+    max-width: 300px;
+  }
+
+  .mauticform-innerform .mauticform-page-wrapper {
+    display: flex !important;
+
+    .mauticform-email {
+      @apply flex-grow;
+    }
+  }
+
+  .mauticform-row {
+    @apply mb-0;
+  }
+
+  .mauticform_wrapper {
+    @apply m-0;
+  }
+
+  .mauticform-error,
+  .mauticform-message {
+    @apply mb-0;
+  }
+
+  .mauticform-input {
+    @apply outline-none rounded-none border-t-0 border-r-0 border-l-0 border-black px-0 pt-0 pb-2;
+
+    border-bottom-width: 2px;
+
+    &::placeholder {
+      @apply font-proxima text-placeholder;
+    }
+  }
+
+  .mauticform-button-wrapper .mauticform-button {
+    @apply rounded-none border-t-0 border-r-0 border-l-0 border-black px-0 pt-0 pb-2;
+
+    border-bottom-width: 2px;
+    margin-left: -1px;
+    text-indent: -9999px;
+    width: 30px;
+    background-image: url(../images/icons/arrow-right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
+
+  .mauticform-errormsg {
+    @apply absolute font-proxima pt-2;
+  }
+}

@@ -1,0 +1,19 @@
+.dd-accordion__item {
+  h4 {
+    &::after {
+      @apply inline-block ml-4 w-2 text-white;
+
+      content: "+";
+    }
+  }
+
+  &--selected {
+    h4 {
+      &::after {
+        @apply inline-block ml-4 w-2 text-white;
+
+        content: "-";
+      }
+    }
+  }
+}

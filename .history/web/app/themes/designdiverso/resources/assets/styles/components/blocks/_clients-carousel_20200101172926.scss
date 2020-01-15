@@ -1,0 +1,23 @@
+// Import Glide
+@import "~@glidejs/glide/src/assets/sass/glide.core.scss";
+@import "~@glidejs/glide/src/assets/sass/glide.theme.scss";
+
+.dd-clients-carousel {
+  svg,
+  img {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  svg {
+    fill: #5d6362;
+  }
+
+  .glide__slides {
+    @apply items-center;
+  }
+
+  .glide__slide {
+    @apply text-center;
+  }
+}

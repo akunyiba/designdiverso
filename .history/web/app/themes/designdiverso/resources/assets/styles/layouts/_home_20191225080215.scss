@@ -1,0 +1,87 @@
+.dd-home-case-study-cols {
+  &--reverse {
+    @apply flex-col-reverse;
+  }
+
+  .wp-block-column {
+    @apply text-center;
+
+    h3 {
+      @apply mt-3;
+    }
+
+    h3 + p {
+      @apply mt-4;
+    }
+
+    .wp-block-image {
+      @apply px-6;
+    }
+  }
+
+  .wp-block-column:first-of-type {
+    @screen xl {
+      @apply pr-24;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @screen xl {
+      @apply pl-24;
+    }
+  }
+
+  @screen sm {
+    &--reverse {
+      @apply flex-row;
+    }
+
+    .wp-block-column {
+      @apply text-left;
+
+      .wp-block-image {
+        @apply px-0;
+      }
+    }
+  }
+}
+
+.dd-home-case-study-spacer {
+  height: 10px !important;
+
+  @screen sm {
+    height: 100px !important;
+  }
+}
+
+.dd-book-a-call-cols {
+  .wp-block-column:first-of-type {
+    @apply flex items-center pt-10;
+  }
+
+  @screen xl {
+    .wp-block-column:first-of-type {
+      @apply pr-4 pl-16;
+    }
+
+    .wp-block-column:last-of-type {
+      @apply pl-4 pr-16;
+    }
+  }
+}
+
+.dd-home-partner-spacer {
+  height: 30px !important;
+
+  @screen sm {
+    height: 100px !important;
+  }
+}
+
+.dd-home-partner-spacer-2 {
+  height: 40px !important;
+
+  @screen sm {
+    height: 60px !important;
+  }
+}

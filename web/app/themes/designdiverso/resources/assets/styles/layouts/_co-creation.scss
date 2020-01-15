@@ -1,0 +1,15 @@
+.dd-core-team-cols {
+  .wp-block-column {
+    @apply px-8;
+  }
+
+  .wp-block-column:nth-of-type(even) {
+    @screen lg {
+      @apply mt-16;
+    }
+  }
+}
+
+.dd-co-creation-join-us {
+  @apply max-w-md mx-auto;
+}

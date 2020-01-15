@@ -1,0 +1,13 @@
+.dd-hero {
+  height: calc(100vh - 144px);
+  
+  &__inner {
+    .wrap {
+      max-width: 530px;
+    }
+  }
+
+  h1 {
+    line-height: 113px;
+  }
+}

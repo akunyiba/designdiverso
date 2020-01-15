@@ -1,0 +1,13 @@
+.dd-mautic-newsletter {
+  .mauticform-innerform .mauticform-page-wrapper {
+    @apply flex;
+
+    .mauticform-email {
+      @apply flex-grow;
+    }
+  }
+
+  .mauticform-input {
+      @apply border-none;
+  }
+}

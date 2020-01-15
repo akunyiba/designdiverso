@@ -1,0 +1,30 @@
+.dd-accordion {
+  counter-reset: dd_accordion_items;
+}
+
+.dd-accordion__item {
+  h4 {
+    &::before {
+      @apply inline-block text-base;
+
+      counter-increment: dd_accordion_items;
+      content: counter(dd_accordion_items);
+    }
+
+    &::after {
+      @apply inline-block ml-4 w-2 text-white;
+
+      content: "+";
+    }
+  }
+
+  &--selected {
+    h4 {
+      &::after {
+        @apply inline-block ml-4 w-2 text-white;
+
+        content: "-";
+      }
+    }
+  }
+}

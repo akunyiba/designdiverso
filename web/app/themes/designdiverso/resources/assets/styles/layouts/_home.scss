@@ -1,0 +1,91 @@
+.home {
+  .content .main {
+    @apply pt-0;
+  }
+}
+
+.dd-home-case-study-cols {
+  &--reverse {
+    @apply flex-col-reverse;
+  }
+
+  .wp-block-column {
+    @apply text-center;
+
+    h3 {
+      @apply mt-3;
+    }
+
+    h3 + p {
+      @apply mt-4;
+    }
+
+    .wp-block-image {
+      @apply px-6;
+    }
+  }
+
+  .wp-block-column:first-of-type {
+    @screen xl {
+      @apply pr-20;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @screen xl {
+      @apply pl-20;
+    }
+  }
+
+  @screen sm {
+    &--reverse {
+      @apply flex-row;
+    }
+
+    .wp-block-column {
+      @apply text-left;
+
+      .wp-block-image {
+        @apply px-0;
+      }
+    }
+  }
+}
+
+.dd-book-a-call-cols {
+  @apply px-6 pt-10;
+
+  .wp-block-column:first-of-type {
+    @apply flex items-center;
+
+    @screen md {
+      @apply pl-10;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @screen md {
+      @apply pr-10;
+    }
+  }
+}
+
+.dd-home-resources-cols {
+  @apply flex flex-col-reverse px-8;
+
+  @screen sm {
+    @apply flex-row;
+  }
+
+  .wp-block-column:first-of-type {
+    @screen xl {
+      @apply pr-20;
+    }
+  }
+
+  .wp-block-column:last-of-type {
+    @screen xl {
+      @apply pl-20;
+    }
+  }
+}

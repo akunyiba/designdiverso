@@ -1,0 +1,26 @@
+.dd-areas-of-expertise-cols {
+  counter-reset: expertise_cols;
+
+  .wp-block-column {
+    @apply ml-0 cursor-pointer;
+
+    flex-basis: 25%;
+
+    > .wp-block-cover {
+      @apply p-12;
+    }
+
+    h3 {
+      a {
+        @apply text-white;
+      }
+
+      &::before {
+        @apply block text-primary text-base;
+
+        counter-increment: expertise_cols;
+        content: "#" counter(expertise_cols);
+      }
+    }
+  }
+}
