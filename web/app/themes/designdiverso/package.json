@@ -78,6 +78,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
+    "gulp": "^4.0.2",
     "jquery": "^3.3.1"
   }
 }

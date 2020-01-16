@@ -3,10 +3,10 @@
 # Folbert-comment: from Capistrano doc:
 # Here we'd set the name of the application, must be in a format that's safe for
 # filenames on your target operating system.
-set :application, 'DESIGNDIVERSO'
+set :application, 'designdiverso'
 
 # Folbert-comment: use the SSH url for the repo from GitHub
-set :repo_url, 'git@github.com:akunyiba/designdiverso.git'
+set :repo_url, 'git@gitlab.com:akunyiba/designdiverso.git'
 
 # Folbert-addition: name of the dir where theme is placed. Not the entire path.
 set :theme_directory_name, 'designdiverso'
@@ -26,7 +26,7 @@ set :deploy_to, -> { "/home/g/godlike2046/dd/public_html" }
 set :tmp_dir, "/home/g/godlike2046/dd/tmp"
 
 # Use :debug for more verbose output when troubleshooting, Default is :info
-set :log_level, :info
+set :log_level, :debug
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)
@@ -106,7 +106,7 @@ namespace :deploy do
     #puts "Running gulp --production on local theme path #{fetch(:local_theme_path)} "
     run_locally do
       # FEW-modification: execute gulp on absolute path
-      execute "cd #{fetch(:local_theme_path)}; gulp --production"
+      execute "cd #{fetch(:local_theme_path)}; yarn build:production"
     end
   end
 
