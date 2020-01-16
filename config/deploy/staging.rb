@@ -15,7 +15,7 @@ server '92.53.96.249', user: 'godlike2046', roles: %w{web app db}
 # you can see them in [net/ssh documentation](http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start)
 # set it globally
  set :ssh_options, {
-   keys: %w(~/.ssh/id_rsa),
+   keys: %w(/home/g/godlike2046/.ssh/id_rsa),
    forward_agent: false,
    user: fetch(:user),
    auth_methods: %w(publickey)
