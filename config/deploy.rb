@@ -14,7 +14,7 @@ set :theme_directory_name, 'designdiverso'
 # Folbert-addition. Use in case composer command does not work.
 # Set value to point to where you put composer.phar on remote server.
 # https://discourse.roots.io/t/deploying-wordpress-with-capistrano-screencast/863/25
-SSHKit.config.command_map[:composer] = "~/bin/composer.phar"
+SSHKit.config.command_map[:composer] = "/usr/local/bin/composer"
 
 # Folbert-comment: this should be set to the target directory of the deploy on the server.
 # So if your site is placed in /home/few/sites/bedrock-test.com/, that is the path to use.
