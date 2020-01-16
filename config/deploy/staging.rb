@@ -16,7 +16,7 @@ server '92.53.96.249', user: 'godlike2046', roles: %w{web app db}
 # set it globally
  set :ssh_options, {
    keys: %w(~/.ssh/id_rsa),
-   forward_agent: true,
+   forward_agent: false,
    user: fetch(:user),
    auth_methods: %w(publickey)
  }
