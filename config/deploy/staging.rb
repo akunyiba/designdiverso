@@ -18,7 +18,7 @@ server '92.53.96.249', user: 'godlike2046', roles: %w{web app db}
    keys: %w(~/.ssh/id_rsa),
    forward_agent: true,
    user: fetch(:user),
-   auth_methods: %w(password)
+   auth_methods: %w(publickey)
  }
 
 fetch(:default_env).merge!(wp_env: :staging)
